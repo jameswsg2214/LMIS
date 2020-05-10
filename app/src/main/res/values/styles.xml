@@ -1,0 +1,160 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/navColor</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_left_arrow_white</item>
+    </style>
+
+    <style name="MyCustom" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/custom_tab_background</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="profileDetailsLayout" parent="parent">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--<style name="headerText" parent="parent">
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>-->
+
+    <style name="profileDetailsImage">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="profileDetailsTextMain" parent="viewParent">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="profileDetailsMiniText" parent="viewParent">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="proifleDetailsView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="profileStyledBackButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/profile_back_button</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:drawableLeft">@drawable/back_to_home_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:minWidth">250dp</item>
+    </style>
+
+    <style name="MyEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="TextFontSmall" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextFontMedium" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextFontLarge" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="customeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+
+
+    <style name="GreenTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Medium.MySubheader">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

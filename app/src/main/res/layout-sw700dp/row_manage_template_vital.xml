@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLinearLayout"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/view" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:weightSum="5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".40"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="S.No"
+                android:id="@+id/serialNumberTextView"
+
+                />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/view" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="Code"
+                android:id="@+id/codeTextView"
+
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/view" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.60"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="Test Name"
+                android:id="@+id/textName" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/view" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:text="@string/displayOrder"
+                android:id="@+id/textdisplayORder"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/view" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:id="@+id/deleteImageView"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_delete_black"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/view" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

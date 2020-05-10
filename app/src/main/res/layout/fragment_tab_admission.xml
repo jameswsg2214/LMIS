@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hmisdoctor.ui.emr_workflow.admission_referal.view_model.AdmissionViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainLayout"
+        android:padding="@dimen/_15sdp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Department*"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1">
+
+            </TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ward*"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1.50">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/deparment"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_weight="1"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/ward_spinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_weight="1.50"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1">
+
+            </TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1">
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+            <EditText
+                android:id="@+id/calendarEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:background="@drawable/edit_text_bottom_border"
+                android:drawableRight="@drawable/ic_calendar_blue"
+                android:hint="Select your date"
+                android:layout_marginEnd="10dp" />
+            <EditText
+                android:id="@+id/timerEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:focusable="false"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_bottom_border"
+                android:drawableRight="@drawable/ic_timer_icon"
+                android:hint="Time"
+                android:layout_marginEnd="10dp" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="22dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/saveCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:cardBackgroundColor="@color/secondaryColor"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_next"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="7dp"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/clearCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="@color/primaryGrey"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_eraser"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="7dp"
+                    android:text="Clear"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hmisdoctor.ui.login.view_model.LoginViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="#900066CC">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="75dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="30dp"
+                            android:src="@drawable/hmis_logo" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:text="HOSPITAL MANAGEMENT INFORMATION SYSTEM"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:layout_weight="0.70"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/hmis_logo" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/loginLayout"
+                            android:visibility="@{viewModel.loginLayout}"
+                            android:gravity="center"
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="LOGIN"
+                                android:textColor="@color/navColor"
+                                android:textSize="23sp"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:drawablePadding="20dp"
+                                android:fontFamily="@font/poppins"
+                                android:hint="Username"
+                                android:maxLines="1"
+
+                                android:singleLine="true"
+                                android:imeOptions="actionNext"
+                                android:text="@={viewModel.username}"
+                                android:textColor="@color/navColor"
+                                android:textSize="21sp"
+                                tools:ignore="HardcodedText" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/passwordEdittext"
+                                android:layout_marginTop="20dp"
+                                android:drawablePadding="20dp"
+                                android:drawableRight="@drawable/ic_eye_close"
+                                android:fontFamily="@font/poppins"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:imeOptions="actionDone"
+                                android:text="@={viewModel.password}"
+                                android:textColor="@color/navColor"
+                                android:textSize="21sp"
+                                tools:ignore="HardcodedText" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/click"
+                                app:cardBackgroundColor="@color/colorAccent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:paddingStart="60dp"
+                                    android:paddingTop="14dp"
+                                    android:paddingEnd="60dp"
+                                    android:gravity="center"
+                                    android:paddingBottom="14dp"
+                                    android:text="Sign in"
+                                    android:textColor="@color/white"
+                                    android:textSize="21sp"
+                                    tools:ignore="HardcodedText" />
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="@string/forgot"
+                                android:onClick="@{() -> viewModel.visisbleSendOTp()}"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:visibility="@{viewModel.sendOptLayout}"
+                            android:id="@+id/forgetsendotpLayout"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="@string/forgotPasswordHeader"
+                                android:textColor="@color/navColor"
+                                android:textSize="23sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/DescribeForgot"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/layoutSendotp"
+                                android:visibility="@{viewModel.forgetUsernemeLayout}"
+                                >
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:drawablePadding="20dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:paddingStart="@dimen/_5sdp"
+                                    android:hint="@string/forgetotphint"
+                                    android:imeOptions="actionNext"
+                                    android:singleLine="true"
+                                    android:text="@={viewModel.forgotpasswordusername}"
+                                    android:textColor="@color/navColor"
+                                    android:textSize="21sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="30dp"
+                                    android:id="@+id/sentopt"
+                                    android:onClick="@{() -> viewModel.validateSendOTp()}"
+                                    app:cardBackgroundColor="@color/colorAccent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:paddingStart="60dp"
+                                        android:paddingTop="14dp"
+                                        android:paddingEnd="60dp"
+                                        android:gravity="center"
+                                        android:paddingBottom="14dp"
+                                        android:text="@string/sendopt"
+                                        android:textColor="@color/white"
+                                        android:textSize="21sp"
+                                        tools:ignore="HardcodedText" />
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/layoutChangePassword"
+                                android:visibility="@{viewModel.changePasswordLayout}"
+                                >
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:drawablePadding="20dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:hint="@string/enterOTP"
+                                    android:imeOptions="actionNext"
+                                    android:text="@={viewModel.otp}"
+                                    android:textColor="@color/navColor"
+                                    android:textSize="21sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:drawablePadding="20dp"
+                                    android:id="@+id/newPasswordEditText"
+                                    android:fontFamily="@font/poppins"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:drawableRight="@drawable/ic_eye_close"
+                                    android:hint="@string/enterNewPassword"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:imeOptions="actionNext"
+                                    android:text="@={viewModel.changePassword}"
+                                    android:textColor="@color/navColor"
+                                    android:textSize="21sp"
+                                    android:inputType="textPassword"
+                                    tools:ignore="HardcodedText" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:drawablePadding="20dp"
+                                    android:fontFamily="@font/poppins"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:hint="@string/enterConfirmPassword"
+                                    android:imeOptions="actionNext"
+                                    android:text="@={viewModel.confirmPassword}"
+                                    android:textColor="@color/navColor"
+                                    android:textSize="21sp"
+                                    android:inputType="textPassword"
+                                    tools:ignore="HardcodedText" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginTop="30dp"
+                                    android:id="@+id/restPassword"
+                                    android:onClick="@{() -> viewModel.validateChangePassword()}"
+                                    app:cardBackgroundColor="@color/colorAccent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_semibold"
+                                        android:paddingStart="60dp"
+                                        android:paddingTop="14dp"
+                                        android:paddingEnd="60dp"
+                                        android:gravity="center"
+                                        android:paddingBottom="14dp"
+                                        android:text="@string/restPassword"
+                                        android:textColor="@color/white"
+                                        android:textSize="21sp"
+                                        tools:ignore="HardcodedText" />
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="@string/loginheader"
+                                android:onClick="@{() -> viewModel.visisbleLogin()}"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/poweredBy"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/poppins"
+                    android:text="Copyrights &#169; 2019 Health Management Information Systems. All rights reserved."
+                    android:textColor="@color/primaryGrey"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Powered By"
+                    android:textColor="@color/primaryGrey"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:src="@drawable/bottom_oasys_logo" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

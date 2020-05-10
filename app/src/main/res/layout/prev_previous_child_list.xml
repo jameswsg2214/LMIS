@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#f4f4f4"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/sNoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:text="@string/s_no"
+        android:textSize="15dp"
+        android:scrollbars="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.50"
+        android:textSize="16dp"
+        android:text="@string/drug_name"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:scrollbars="horizontal" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16dp"
+        android:id="@+id/routeTextView"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:scrollbars="horizontal"
+        android:text="@string/route" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:id="@+id/frequencyTextView"
+        android:padding="@dimen/_2sdp"
+        android:scrollbars="horizontal"
+        android:text="@string/frequency" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16dp"
+        android:id="@+id/durationTextView"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:scrollbars="horizontal"
+        android:text="@string/duration" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:id="@+id/instructionTextView"
+        android:padding="@dimen/_2sdp"
+        android:scrollbars="horizontal"
+        android:text="@string/instruction" />
+
+</LinearLayout>
+

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "744578813317",
+    "firebase_url": "https://drapp-7e36c.firebaseio.com",
+    "project_id": "drapp-7e36c",
+    "storage_bucket": "drapp-7e36c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744578813317:android:42a6a20f1da294cedb88ec",
+        "android_client_info": {
+          "package_name": "com.hmisdoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744578813317-lgd5v31kakhsga6s0p3obl87l6cro4u4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hmisdoctor",
+            "certificate_hash": "9a0e6cd2e7fc8c7544c9daaa616c284b2b797f02"
+          }
+        },
+        {
+          "client_id": "744578813317-5gt26clfs9me3ddpim3idvl1r05arb8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANuPzxfmmygYV7EYT6zE-hob5ofVjeeT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744578813317-5gt26clfs9me3ddpim3idvl1r05arb8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

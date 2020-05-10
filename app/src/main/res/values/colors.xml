@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0066CC</color>
+    <color name="colorPrimaryDark">#0066CC</color>
+    <color name="colorAccent">#FFA31A</color>
+    <color name="secondaryColor">#00bfa5</color>
+    <color name="grey">#777777</color>
+    <color name="colorLightGrey">#f9f9f9</color>
+    <color name="colorDarkGrey">#6F6F6F</color>
+    <color name="view">#F1F1F1</color>
+    <color name="navColor">#333</color>
+    <color name="positiveToast">#4CAF50</color>
+    <color name="negativeToast">#F44336</color>
+    <color name="white">#ffffff</color>
+    <color name="poweredBy">#CFD0D2</color>
+    <color name="primaryGrey">#6F6F6F</color>
+    <color name="drawerTitle">#F8F8F8</color>
+    <color name="liteBlue">#E4EDF9</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="hintColor">#9E9E9E</color>
+    <color name="alternateRow">#F2F2F2</color>
+    <color name="orange">#FF5722</color>
+    <color name="Skyblue">#00BCD4</color>
+    <color name="fadeBlue">#CFDDF2</color>
+    <color name="fadeGreen">#EEF5F9</color>
+    <color name="outPtientGreen">#00b28a</color>
+    <color name="waitingPatientsBlue">#7D5DCB</color>
+    <color name="consultedPatientsGreen">#2ECF91</color>
+    <color name="prescriptionsYellow">#DE9925</color>
+    <color name="orderColorBlue">#2C98F2</color>
+
+
+
+//Dashboard
+    <color name="op">#00b28a</color>
+    <color name="ip">#0066cc</color>
+    <color name="config">#ff8517</color>
+    <color name="wp">#8962e1</color>
+    <color name="cp">#1ed794</color>
+    <color name="orders">#2196f5</color>
+    <color name="pre">#ffaf00</color>
+    <color name="patient">#ffcf9f</color>
+    <color name="order">#9accfd</color>
+
+
+
+    <color name="hmis_background">#3F51B5</color>
+
+</resources>

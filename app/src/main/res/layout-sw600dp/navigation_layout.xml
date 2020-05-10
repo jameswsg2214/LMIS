@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="RtlSymmetry,UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileCircleImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_menu_gallery"
+                    tools:ignore="UnusedAttribute,VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/familyAddLayout"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/userNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:singleLine="true"
+                            android:text="Gomathi"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/user_uhid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="20-03-2020"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+
+                    <!--
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="@color/view" />
+-->
+
+
+                    <LinearLayout
+                        android:id="@+id/myProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_treatment"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/my_profile"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+
+
+                    <!--
+                                        <LinearLayout
+                                            android:id="@+id/settings"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:clickable="true"
+                                            android:focusable="true"
+                                            android:foreground="?android:attr/selectableItemBackground"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:paddingStart="@dimen/_20sdp"
+                                            android:paddingTop="@dimen/_8sdp"
+                                            android:paddingBottom="@dimen/_8sdp"
+                                            tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                app:srcCompat="@drawable/ic_settings"
+                                                tools:ignore="ContentDescription" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="@font/poppins"
+                                                android:paddingStart="@dimen/_10sdp"
+                                                android:text="@string/action_settings"
+                                                android:textColor="@color/white"
+                                                android:textSize="13sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="HardcodedText" />
+
+                                        </LinearLayout>
+                    -->
+
+                    <LinearLayout
+                        android:id="@+id/registration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_logout"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/registration_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Registration"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageView
+                            android:id="@+id/add_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            app:srcCompat="@drawable/ic_add"
+                            tools:ignore="ContentDescription" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/covidReg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="COVID-19 Registration"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/quick_Reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Quick Registration"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_logout"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Lab "
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageView
+                            android:id="@+id/lab_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            app:srcCompat="@drawable/ic_add"
+                            tools:ignore="ContentDescription" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lab_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Lab Test"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lab_approvl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Test Approval"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lab_process"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Test Process"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/emr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_out_patient"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="EMR "
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageView
+                            android:id="@+id/emr_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            app:srcCompat="@drawable/ic_add"
+                            tools:ignore="ContentDescription" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/outpatient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Out Patient"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/inPatient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="In Patient"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/config"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Configuration"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_notifications"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/notification"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_settings"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/action_settings"                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <ImageView
+                            android:id="@+id/settings_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120dp"
+                            app:srcCompat="@drawable/ic_add"
+                            tools:ignore="ContentDescription" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/changePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:drawablePadding="30dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/change_password"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        tools:ignore="UnusedAttribute,UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_logout"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="@string/logout"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</layout>

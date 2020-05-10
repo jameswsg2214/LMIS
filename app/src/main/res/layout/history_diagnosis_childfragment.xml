@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hmisdoctor.ui.emr_workflow.history.diagnosis.viewModel.HistoryDiagnosisViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/contentLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/s_no"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="17dp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="@string/date_time"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:drawableRight="@drawable/sort"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:gravity="center"
+                    android:text="@string/type"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="17dp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:text="@string/name"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:drawableRight="@drawable/sort"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="@string/remark"
+                    android:drawableRight="@drawable/sort"
+                    android:textSize="17dp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/action"
+                    android:textSize="17dp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:background="@color/alternateRow"
+                >
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/hash"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:id="@+id/etDiagnosisDateTime"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="@string/date_time"
+                    />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:visibility="invisible"
+                    android:id="@+id/diagnosisEncounterTypeSpinner"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:drawableRight="@drawable/ic_search"
+                    android:id="@+id/etDiagnosisName"
+                    />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:id="@+id/etDiagnosisRemarks"
+                    />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".1"
+                    android:padding="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_add_blue"
+                    android:id="@+id/addNewDiagnosisIconView"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diagnosisRecyclerView"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="22dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/saveCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:cardBackgroundColor="@color/secondaryColor"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_next"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:paddingStart="15dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:text="Next"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/clearCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:cardBackgroundColor="@color/primaryGrey"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_eraser"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:paddingStart="15dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="7dp"
+                        android:text="Clear"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

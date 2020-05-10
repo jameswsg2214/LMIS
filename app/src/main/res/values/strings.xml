@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name">TN HMIS LMIS</string>
+    <string name="Department">Department Selection*</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="unauthorized">UnAuthorized</string>
+    <string name="configname">EMR</string>
+    <string name="configfav">Work Flow</string>
+    <string name="title_activity_dashboard_screen">DashboardScreenActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="item_not_found">Please add any one field</string>
+    <string name="manage_institute">Manage Institute</string>
+
+    <string name="manage_template">Manage Template</string>
+    <string name="Institution">Please Select Institution *</string>
+    <string name="Institution_title">Institution Selection *</string>
+    <string name="office">Office Selection*</string>
+    <string name="data_save">Data saved successfully</string>
+    <string name="empty_item">Please select any item</string>
+    <string name="bad">Bad Request</string>
+    <string name="MT_title">Manage Templates</string>
+    <string name="MT_fav_title">Manage Favorites</string>
+    <string name="share_radio1">Myself</string>
+
+    <string name="Snomed_title">Snomed Browser</string>
+    <string name="share_radio2">My Department</string>
+
+    <string name="share">Share</string>
+
+    <string name="status">Status</string>
+
+    <string name="save">Save</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="moveall">Move all</string>
+
+    <string name="template">Manage Templates</string>
+
+    <string name="active">Active</string>
+
+    <string name="inactive">In Active</string>
+
+    <string name="details">Details</string>
+
+    <string name="Snomed">Snomed</string>
+    <string name="s_no">S.No</string>
+    <string name="Code">Code</string>
+    <string name="Type">Type</string>
+    <string name="Action">Action</string>
+
+    <string name="Dignosis">Dignosis</string>
+
+    <string name="icd_favourites">ICD Favourites</string>
+
+    <!--allergy-->
+    <string name="serial_num">S.No</string>
+    <string name="date_time">Date and Time</string>
+    <string name="type">Type</string>
+    <string name="allergy">Allergy</string>
+    <string name="source">Source</string>
+    <string name="duration">Duration</string>
+    <string name="severity">Severity</string>
+    <string name="action">Action</string>
+
+    <string name="hash">#</string>
+
+    <!--prvprescription-->
+
+    <string name="drug_name">Drug Name</string>
+    <string name="route">Route</string>
+    <string name="frequency">Frequency</string>
+    <string name="instruction">Instruction</string>
+
+    <string name="loginheader">Login</string>
+
+    <string name="dialogMessage">Are you sure want to delete?</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_password">Change Password</string>
+
+    <string name="forgot">Forgot Password?</string>
+
+    <string name="forgotPasswordHeader">Forgot Password</string>
+
+    <string name="DescribeForgot">Enter below details to proceed further</string>
+
+    <string name="forgetotphint"> User Name / Email ID</string>
+
+    <string name="sendopt">SEND OTP</string>
+
+    <string name="restPassword">RESET PASSWORD</string>
+
+    <string name="enterOTP">Enter OTP</string>
+
+    <string name="enterNewPassword">Enter New Password</string>
+
+    <string name="enterConfirmPassword">Enter Confirm Password</string>
+
+    <string name="comment">Comment</string>
+
+    <string name="displayOrder">Display Order</string>
+
+    <string name="savetemplate">Save Template</string>
+
+    <string name="chiefcomplaint">Chief Complaints / Others</string>
+    <string name="confignamehistory">History</string>
+    <string name="configfavhistory">Doctor\'s Panel</string>
+    <string name="notification">Notification</string>
+    <string name="logout">Logout</string>
+
+    <string name="name">Name</string>
+
+    <string name="remark">Remarks</string>
+    <string name="Dignosisname">DiagnosisName</string>
+    <string name="delete_message">"Are you sure want to delete "</string>
+    <string name="managefavourites">Manage Favourites</string>
+    <string name="terms_of_use_privacy_policy">Terms of Use | Privacy Policy</string>
+    <!--<string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>-->
+    <string name="terms_and_conditions"> This Mobile App and website is designed, developed and maintained by National Informatics Centre/NICSI and content provided by Ministry of Health &amp; Family Welfare, Government of India for the information to general public. The documents and information displayed in this website are for reference purposes only and do not purport to a legal document.
+
+Though all efforts have been made to ensure the accuracy and currency of the content on this website, the same should not be construed as a statement of law or used for any legal purposes. In case of any ambiguity or doubts, users are advised to verify / check with the Department(s) and / or other source(s), and to obtain appropriate professional advice before use of information.
+
+In case of any variance between what is stated and that contained in the relevant Acts, Rules, Regulations, Policy, Statements, etc, the latter shall prevail.Under no circumstances will this Ministry/Department be liable for any expense, loss or damage including, without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use, of data, arising out of or in connection with the use of this website.
+
+These terms and conditions shall be governed by and construed in accordance with the Indian Laws. Any dispute arising under these terms and conditions shall be subject to the jurisdiction of the courts of India.
+
+The information posted on this website could include hypertext links or pointers to information created and maintained by non-Government / private organisations. Ministry of Health &amp; Family Welfare is providing these links and pointers solely for your information and convenience. When you select a link to an outside website, you are leaving the Ministry of Health &amp; Family Welfare website and are subject to the privacy and security policies of the owners / sponsors of the outside website.
+
+Ministry of Health &amp; Family Welfare does not guarantee the availability of such linked pages at all times.
+
+Ministry of Health &amp; Family Welfare cannot authorize the use of copyrighted materials contained in linked websites. Users are advised to request such authorization from the owner of the linked website.
+
+Ministry of Health &amp; Family Welfare does not guarantee that linked websites comply with Indian Government Web Guidelines.Ministry of Health &amp; Family Welfare neither endorses in any way nor offers any judgement or warranty and accepts no responsibility or liability for the authenticity, availability of any of the goods or services or for any damage, loss or harm, directly or consequential or any violation of international or local laws that may be incurred by your visiting and transacting on these Mobile App and websites.
+    </string>
+    <string name="text_with_bullet">\u25CF Lorem ipsum dolor sit amet</string>
+
+
+    <string-array name="item_fruits">
+
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Mango</item>
+        <item>Orange</item>
+        <item>Cherry</item>
+        <item>Grape</item>
+        <item>Coconut</item>
+        <item>Blueberry</item>
+        <item>Strawberry</item>
+        <item>Pear</item>
+        <item>Watermelon</item>
+
+    </string-array>
+
+    <string-array name="item_price">
+
+        <item>100</item>
+        <item>40</item>
+        <item>55</item>
+        <item>25</item>
+        <item>80</item>
+        <item>120</item>
+        <item>15</item>
+        <item>30</item>
+        <item>70</item>
+        <item>85</item>
+        <item>75</item>
+
+    </string-array>
+
+    <string name="namecode">Name / code</string>
+    <string name="sno">S.No</string>
+    <string name="qty">Qty</string>
+    <string name="str_category">category</string>
+    <string name="prev_certi">Previous Certificate</string>
+    <string name="date">Date</string>
+    <string name="certificate_name">Certificate Name</string>
+    <string name="issued">Issued BY</string>
+
+</resources>

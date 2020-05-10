@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="#f4f4f4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="S.No"
+            android:id="@+id/sNoTextView"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/view" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/nameTextView"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.80"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingStart="10dp"
+            android:text="Drug Name"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/view" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60"
+            android:id="@+id/routeTextView"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Route"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/view" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.72"
+            android:fontFamily="@font/poppins_semibold"
+            android:id="@+id/frequencyTextView"
+            android:text="Frequency"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/view" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.68"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingStart="10dp"
+            android:text="Duration"
+            android:id="@+id/durationTextView"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/view" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".65"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Instruction"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/instructionTextView"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/view" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

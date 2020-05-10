@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hmisdoctor.ui.emr_workflow.op_notes.view_model.OpNotesViewModel" />
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/ICDdrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        tools:openDrawer="end">
+
+        <FrameLayout
+            android:id="@+id/diagnosisFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mainLayout"
+                android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/opNotesSpinner"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="45dp"
+                android:layout_gravity="end" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/opNotesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:ignore="UnusedAttribute" />
+
+            </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </FrameLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</layout>

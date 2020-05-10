@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hmisdoctor.ui.emr_workflow.history.surgery.viewmodel.HistorySurgeryViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/_2sdp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:id="@+id/hideLayout"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="S.No"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="10dp"
+                    android:drawableRight="@drawable/sort"
+                    android:text="Date and Time"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Name"
+                    android:drawableRight="@drawable/sort"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="10dp"
+                    android:drawableRight="@drawable/sort"
+                    android:text="Institution"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="10dp"
+                    android:drawableRight="@drawable/sort"
+                    android:text="Remarks"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/view" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingStart="10dp"
+                    android:text="@string/Action"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/view" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/hideLayoutSub"
+                android:background="@color/poweredBy"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:gravity="center"
+                    android:text="@string/hash"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/etFamilyDateTime"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    android:hint="@string/date_time" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.25"
+                    android:id="@+id/surguryNameSpinner"
+                    android:textAlignment="center"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.50"
+                    android:textAlignment="center"
+                    android:id="@+id/surguryInstitutionSpinner"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:id="@+id/etRemarks"
+                    android:hint="Remarks" />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    app:srcCompat="@drawable/ic_add_blue"
+                    android:id="@+id/addNewSurgeryIconView"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historySurguryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noRecordsTextView"
+                android:text="Currently no records!!"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_50sdp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
